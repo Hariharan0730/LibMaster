@@ -1,6 +1,6 @@
 const nodemailer = require("nodemailer");
-const EmailLog = require("./models/EmailLog")
-const BorrowRequest = require("./models/BorrowRequest");
+const EmailLog = require("./models/emaillog")
+const BorrowRequest = require("./models/borrowrequest");
 require("dotenv").config();
 
 const transporter = nodemailer.createTransport({
