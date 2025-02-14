@@ -5,7 +5,7 @@ const mongoose = require("mongoose");
 const cron = require("node-cron");
 const BookRoutes = require("./routes/bookRoutes");
 const userRoutes = require("./routes/authRoutes");
-const { sendOverdueEmails, sendAdminSummary } = require("./emailService");
+const { sendOverdueEmails, sendAdminSummary } = require("./emailservice");
 require("dotenv").config();
 const app = express();
 
