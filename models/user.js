@@ -13,4 +13,5 @@ const UserSchema = new mongoose.Schema({
   bookmarks: [{ type: mongoose.Schema.Types.ObjectId, ref: "Book" }], 
 }, { timestamps: true });
 
-module.exports = mongoose.model("User", UserSchema);
+const User = mongoose.model("User", UserSchema);
+module.exports = User;

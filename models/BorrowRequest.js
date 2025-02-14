@@ -14,4 +14,5 @@ const BorrowRequestSchema = new mongoose.Schema({
     returnedDate: { type: Date, default: null },
 }, { timestamps: true });
 
-module.exports = mongoose.model("BorrowRequest", BorrowRequestSchema);
+const BorrowRequest = mongoose.model("BorrowRequest", BorrowRequestSchema);
+module.exports = BorrowRequest;
